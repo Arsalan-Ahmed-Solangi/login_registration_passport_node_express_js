@@ -1,0 +1,40 @@
+
+    {{!-- Start of Header --}}
+    {{>header}}
+    {{!-- End of Header --}}
+
+    {{!-- Start of Main Content --}}
+    <div class="container mt-5">
+        <div class="card shadow-sm bg-white" style="width: 50%;margin:auto">
+            <div class="card-header bg-dark text-light">
+                <h4>Login Page</h4>
+            </div>
+            <div class="card-body">
+                <form action="/login" method="POST">
+                   
+
+                     <div class="form-group m-1">
+                        <label>Username<span class="text-danger">*</span></label>
+                        <input type="email" name="username" placeholder="Enter Username" required class="form-control"/>
+                    </div>
+
+
+                    <div class="form-group m-1">
+                        <label>Password<span class="text-danger">*</span></label>
+                        <input type="password" name="password" placeholder="Enter Password" required class="form-control"/>
+                    </div>
+
+
+                     <div class="form-group m-1">
+                         <a href="/regiter" class="btn btn-dark btn-sm  offset-md-9">Register</a>
+                        <button type="submit" class="btn btn-sm btn-danger">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{!-- End of Main Content --}}
+
+    {{!-- Start of Footer --}}
+    {{>footer}}
+    {{!-- End of Footer --}}
